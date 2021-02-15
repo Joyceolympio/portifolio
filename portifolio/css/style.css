@@ -8754,6 +8754,86 @@ textarea.form-control {
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
 
+  .container-all{
+    width: 100%;
+    margin: 20px auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.container-portfolio{
+    width: calc(33% - 6px);
+    overflow: hidden;
+    height: auto;
+    margin: 3px auto;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+section.containercontainer-portfolio > img{
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    transition-duration: .3s;
+}
+
+.title-portfolio{
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 35%;
+    left: 50%;
+    font-weight: bold;
+    font-size: 1.6em;
+    text-shadow: 1px 5px 10px black;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition-duration: .3s;
+    display: none;
+}
+
+.text-portifolio{
+    position: absolute;
+    top: 70%;
+    cursor: pointer;
+    max-width: 80%;
+    text-align: center;
+    left: 50%;
+    margin-right: -50%;
+    font-size: 1em;
+    text-shadow: 1px 5px 10px black;
+    transform: translate(-50%, -50%);
+    transition-duration: .3s;
+    display: none;
+}
+
+.container-portfolio:hover img{
+    transform: scale(1.2);
+    transition-duration: .3s;
+    filter: grayscale(50%);
+    opacity: 0.7;
+}
+
+.container-portfolio:hover span{
+    display: block;
+    color: white;
+    transition-duration: .3s;
+}
+
+  .portfolio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.img-portfolio{
+  width: 100%;
+  border-radius: 13px;
+}
+
 @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);
